@@ -1,0 +1,23 @@
+.same-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.items{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 3px;
+  }
+  
+  @media (min-width: 600px) {
+      .items { grid-template-columns: repeat(2, 1fr); }
+    }
+    
+    /* Screen larger than 900px? 3 columns */
+    @media (min-width: 900px) {
+      .items { grid-template-columns: repeat(3, 1fr); }
+  }
