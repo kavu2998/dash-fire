@@ -26,7 +26,6 @@ function App() {
       <Provider store = {store}>
         <ToastContainer position="top-right" />
         <Header /> 
-        
         <Routes>
          <Route path="/" element = {<Card />} /> 
          <Route path="/add" element={<AddItem />} />
