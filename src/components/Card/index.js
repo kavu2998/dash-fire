@@ -19,11 +19,11 @@ function Card() {
     }
 
     return (
-        <div className="items">
+        <div className="row">
             {
                 Object.keys(items).map(id => {
                     return (
-                        <div key={id} className="col col-md-4" >
+                        <div key={id} className="col col-md-3" >
                             <div className="card" style={{width:'400px', margin:'10px'}}>
                                 <h5 className="card-header">{items[id].name}</h5>
                                 <div className="card-body">
